@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30sp"
+    app:cardElevation="8dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/cardcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="10sp"
+            android:layout_marginTop="0dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_box_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SignUpBox"
+            app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="6dp"
+            android:hint="Email"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_box_login"
+            android:layout_width="match_parent"
+            style="@style/SignUpBox"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="6dp"
+                android:hint="Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:gravity="top"
+            android:padding="0dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="Forgot Password ?"
+            app:rippleColor="@android:color/transparent"
+            android:layout_gravity="end"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Buttonstyle"
+            android:layout_gravity="center_horizontal"
+            android:text="Login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/acme"
+            android:text="Don't have an account with us?\n\t\t\t\tCreate one for free!!" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signup_button_loginpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Buttonstyle"
+            android:layout_gravity="center_horizontal"
+            android:text="SignUp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

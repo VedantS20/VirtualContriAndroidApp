@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30sp"
+    app:cardElevation="8dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/cardcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="10sp"
+            android:layout_marginTop="0dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_box_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SignUpBox"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_baseline_group_add_24"
+                android:drawablePadding="6dp"
+                android:hint="Enter Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_box_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_baseline_group_add_24"
+            style="@style/SignUpBox"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawablePadding="6dp"
+                android:hint="Enter Private Group id"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/join_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Join Group" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

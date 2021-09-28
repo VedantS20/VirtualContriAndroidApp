@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name of your Quiz"
+        style="@style/TextBox"
+        android:id="@+id/quiz_name_box"
+        app:errorEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quiz_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_name_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@id/quiz_name_box"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
